@@ -30,7 +30,27 @@ body {
     color: #fff;
     list-style: none;
     margin: 0 8px;
+    padding: 12px 50px 12px 50px;
     display: inline-block;
+    background-color: #ef5425;
+    border: 2px;
+    border-color: black;
+    cursor: pointer;
+    user-select: none;
+    animation: opacity 0.2s ease;
+    border-radius: 50px;
+}
+
+.nav-item {
+    opacity: 0.8;
+}
+
+.nav-item + .nav-item {
+    padding-left: 12px;
+}
+
+.nav-item:hover {
+    color: red;
 }
 
 .form-container {
