@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 5 thuc hanh Web</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            color: #000;
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        .clearfix::affter {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+        }
+
+        .news {
+            background-color: #fff;
+            margin: 30px auto;
+            width: 1000px;
+        }
+
+        .news .image {
+            float: left;
+            width: 300px;
+        }
+
+        .news .info-news {
+            float: right;
+            margin-bottom: 18px;
+            width: 640px;
+        }
+
+        .news .info-news h2 {
+            font-size: 30px;
+            font-weight: 10px;
+            margin: 12px 0 14px;
+            text-transform: uppercase;
+        }
+
+        .news .info-news .inner {
+            margin-bottom: 18px;
+        }
+
+        .news .info-news p {
+            margin-bottom: 30px;
+
+        }
+
+        .news .info-news .detail {
+            margin-bottom: 18px;
+        }
+
+        .news .info-news .detail a {
+            border: 2px solid black;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 20px 1px;
+            min-width: 70px;
+            text-align: center;
+            color: #000;
+            background-color: #fff;
+            animation: 0.3s ease all;
+        }
+
+        .news .info-news .detail a:hover {
+            background-color: #333;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="news clearfix">
+        <div class="image">
+            <img src="../images/img_300x400.png" alt="hoc web chuan">
+        </div>
+        <div class="info-news">
+            <h2>Vestibulum ullamcorper ut leo quis</h2>
+            <div class="inner">
+                <p> Aenean facilisis lectus ante, ut rutrum eros convallis et.
+                    Vestibulum ullamcorper ut leo quis tristique. Donec in erat commodo, pharetra purus ac, consectetur
+                    lacus. Suspendisse odio sapien, egestas at ex sit amet, molestie sagittis est.</p>
+                <p>In id purus imperdiet nisl accumsan scelerisque. Donec nec justo sed enim dapibus rhoncus. Morbi sed
+                    elit vitae metus ullamcorper efficitur.</p>
+                <p>Fusce aliquam magna id ipsum ultricies interdum. Maecenas nibh risus.</p>
+            </div>
+            <p class="detail"><a href="#">DETAIL</a></p>
+        </div>
+    </section>
+</body>
+
+</html>
