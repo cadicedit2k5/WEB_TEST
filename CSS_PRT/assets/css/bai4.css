@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-image: url(../images/bg.webp);
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div img {
+    width: 120px;
+}
+
+.ads {
+    background-color: lightseagreen;
+    color: white;
+    font-weight: 400;
+    margin: 4px;
+    width: 200px;
+    height: 120px;
+    font-size: 20px;
+    border: 1px dashed blue;
+    text-align: center;
+    line-height: 120px;
+}
+
+nav {
+    background-color: gray;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    border-right: 1px solid black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+.left, .right {
+    background-color: lightblue;
+    height: 800px;
+    border: 1px solid white;
+}
+
+.left {
+    width: 25%;
+}
+
+.left ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left .menu li {
+    background: linear-gradient(skyblue, white);
+    padding: 15px;
+    border: 1px solid white;
+}
+
+.right {
+    width: 75%;
+}
+
+.book {
+    width: 20%;
+}
+
+.book img {
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.book h4 {
+    text-align: center;
+}
