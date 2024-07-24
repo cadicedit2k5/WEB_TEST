@@ -1,0 +1,219 @@
+* {
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-color: #CC3300;
+}
+
+ul.menu > li {
+    width: 16.66%;
+    text-align: center;
+    border-left: 1px solid white;
+}
+
+ul.menu > li > a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 15px;
+}
+
+ul.menu > li > a:hover {
+    background-color: gold;
+}
+
+ul.menu > li > a > span {
+    display: block;
+}
+
+.sub {
+    position: relative;
+}
+
+ul.submenu{
+    background-color: darkorange;
+    list-style-type: none;
+    padding: 0;
+    opacity: 0; 
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu::after {
+    content: " ";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent darkorange transparent;
+    position: absolute;
+    bottom: 100%;
+    left: 47%
+}
+
+
+.sub:hover ul.submenu {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+ul.submenu > li > a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 12px;
+}
+
+ul.submenu > li > a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.col10 {
+    width: 10%;
+}
+
+.col10 img {
+    width: 100%;
+}
+
+.col30 {
+    width: 33.33%;
+}
+
+.col70{
+    width: 70%;
+}
+.col20{
+    width: 20%;
+}
+
+header {
+    margin-top: 10px;
+    background: linear-gradient(orange, #CC3300);
+}
+
+div.my-header{
+    display: flex;
+    align-items: center;
+}
+
+div.my-header .col70 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 4px 3px darkblue;
+}
+
+input {
+    padding: 8px;
+}
+
+input[type="search"] {
+    width: 70%;
+}
+
+input[type="button"] {
+    cursor: pointer;
+    background-color: orange;
+    border: 1px solid rgb(160, 92, 14);
+}
+
+input[type="button"]:hover {
+    opacity: 0.8;
+}
+
+aside.ads{
+    position: fixed;
+}
+
+ul.new-menu {
+    width: 10%;
+}
+
+ul.new-menu > li > a > img {
+    width: 50%;
+    margin: 5px;
+}
+
+div.courses {
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.items {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.item {
+    width: 25%;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+div.item h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(blue, lightblue);
+}
+
+div.item > div {
+    background: linear-gradient(rgb(65, 49, 22),orange);
+}
+
+div.item img {
+    width: 70%;
+}
+
+footer {
+    background: linear-gradient(rgb(65, 49, 22),orange);
+}
+
+div.my-footer {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+}
+
+div.my-footer >div > ul {
+    list-style-type: none;
+    
+}
+
+div.detail {
+    background: rgba(0, 0, 0, 0.7) !important;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    padding-top: 20%;
+    padding-left: 10%;
+    visibility: hidden;
+    transition: left 0.8s;
+}
+
+div.item:hover div.detail {
+    left: 0;
+    visibility: visible;
+}
+
+div.detail ul {
+    list-style-type: none;
+}

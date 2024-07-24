@@ -1,0 +1,37 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    background-color: #0a6fa3;
+}
+
+.menu .menu-list, .menu .menu-user{
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu .menu-list .menu-item
+ {
+    padding: 16px;
+    border-right: 1px solid white;
+}
+
+.menu .menu-list .menu-item:hover,
+.menu .menu-user .user-item:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.menu .menu-list .menu-item a,
+.menu .menu-user .user-item a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.menu .menu-user .user-item {
+    padding: 16px 8px;
+}

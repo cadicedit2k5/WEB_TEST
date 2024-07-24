@@ -60,7 +60,6 @@ nav ul li a:hover {
 
 .left, .right {
     background-color: lightblue;
-    height: 800px;
     border: 1px solid white;
 }
 
@@ -74,10 +73,25 @@ nav ul li a:hover {
     margin: 0;
 }
 
-.left .menu li {
+.menu li {
     background: linear-gradient(skyblue, white);
     padding: 15px;
     border: 1px solid white;
+}
+
+.menu li:hover {
+    background: blue;
+    cursor: pointer;
+}
+.menu li:first-child {
+    background: linear-gradient(skyblue, white) !important;
+    color: #333;
+}
+.menu li a {
+    text-decoration: none;
+}
+.menu li:hover a {
+    color: white;
 }
 
 .right {
@@ -86,6 +100,11 @@ nav ul li a:hover {
 
 .book {
     width: 20%;
+    transition: transform linear .2s;
+}
+
+.book:hover img{
+    transform: translateY(-10px);
 }
 
 .book img {
@@ -95,4 +114,10 @@ nav ul li a:hover {
 
 .book h4 {
     text-align: center;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(#0199ff, #b2d7e8);
+    padding: 20px;
 }
