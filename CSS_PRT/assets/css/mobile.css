@@ -1,0 +1,15 @@
+.flex {
+    flex-direction: column;
+}
+
+header > img {
+    max-width: 100%;
+}
+
+aside {
+    display: none;
+}
+
+.course {
+    width: 100%;
+}

@@ -1,37 +1,164 @@
+:root {
+    --p: 10px;
+}
+
 .flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.menu {
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* padding: 0;
+    margin: 0; */
+}
+
+nav {
+    background-color: lightseagreen;
+    margin-bottom: 5px;
+}
+
+ul.menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul.menu:first-child > li {
+    border-left: 1px solid white;   
+}
+
+ul.menu > li > a{
+    text-decoration: none;
+    padding: 1.2rem;
+    display: block;
+}
+
+ul.menu > li > a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* CSS submenu */
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding: var(--p);
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+    width: 15%;
+    right: 0;
+    margin: 5px;
+}
+
+.sub:hover .submenu {
+    display: block;
+
+    position: absolute;
+}
+
+.submenu::after {
+    content: " ";
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent darkgoldenrod transparent;
+    top: -16px;
+    right: 22%;
+    position: absolute;
+}
+
+.submenu > li {
+    position: relative;
+}
+
+
+header {
+    width: 100%;
+    background: linear-gradient(darkblue, blue);
+}
+
+header > h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 2px white;
+    color: white;
+}
+
+
+
+/* CSS FOOTER */
+
+footer { 
     background-color: #0a6fa3;
 }
 
-.menu .menu-list, .menu .menu-user{
-    height: 100%;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+footer > ul > li {
+    font-size: 0.8rem;
 }
 
-.menu .menu-list .menu-item
- {
-    padding: 16px;
-    border-right: 1px solid white;
+footer > img {
+    width: 50%;
 }
 
-.menu .menu-list .menu-item:hover,
-.menu .menu-user .user-item:hover {
+/* CSS Aside */
+aside {
+    margin: 10px;
+    width: 100%;
+    position: fixed;
+}
+
+aside .ads > h3 {
+    background-color: lightskyblue;
+    width: 10%;
+    color: darkblue;
+    padding: 60px 0;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 10px;
+    position: relative;
+}
+aside .ads > h3:last-child {
+    position: absolute;
+    right: 30px;
+}
+/* CSS main */
+
+.course {
+    width: 70%;
+    margin: auto;
+}
+
+.forums > h2 {
     background-color: blue;
-    cursor: pointer;
+    margin-bottom: 0;
+    color: white;
+    padding: var(--p);
+    border-radius: 8px 8px 0 0;
 }
 
-.menu .menu-list .menu-item a,
-.menu .menu-user .user-item a {
+.forum {
+    background-color: lightseagreen;
+    border-bottom: 1px solid white;
+}
+
+.forum:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.forum div > img {
+    width: 10rem;
+}
+
+.forum > p:last-child {
+    font-style: italic;
+    direction: rtl;
+}
+
+.forum p > a {
     text-decoration: none;
-    color: #ccc;
 }
 
-.menu .menu-user .user-item {
-    padding: 16px 8px;
+.forum > ul {
+    list-style-type: none;
 }
+
