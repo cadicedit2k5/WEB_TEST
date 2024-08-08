@@ -1,0 +1,132 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;;
+}
+
+ul.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: linear-gradient(blue, lightblue);
+}
+
+ul.menu > li > a{
+    text-decoration: none;
+    padding: 1rem;
+    color: #fff;
+    display: block;
+}
+
+ul.menu > li:last-child {
+    margin-left: auto;
+}
+
+ul.menu > li > a:hover {
+    background-color: darkblue;
+}
+
+div.product {
+    width: 20%;
+    padding: .3rem;
+    box-sizing: border-box;
+}
+
+div.product > div {
+    position: relative;
+    color: white;
+    background: linear-gradient(lightblue, blue);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+div.product img {
+    width: 100%;
+}
+
+div.product .price {
+    position: absolute;
+    background-color: rgba(10, 146, 82, 0.6);
+    padding: 10px;
+    border-radius: 10px 0;
+    top: 0; 
+    left: 0;
+    color: rgba(255, 255, 255, 0.766);
+}
+
+.red {
+    color: red;
+}
+
+.button button {
+    width: 30px;
+    height: 30px;
+}
+
+.detail {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.display {
+    width: 50%;
+}
+
+.display img {
+    opacity: 1;
+    transition: all 2s linear;
+}
+
+.phone {
+    width: 20%;
+    cursor: pointer;
+}
+
+.infos {
+    width: 50%;
+}
+
+.info {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.info.sale {
+    border-color: red;
+}
+
+footer {
+    color: #fff;
+    background: linear-gradient(blue, lightblue);
+    padding: 10px;
+    overflow: hidden;
+}
+
+@keyframes move {
+    from {
+        left: -20%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+footer h3 {
+    width: 100%;
+    position: relative;
+    animation: move 10s linear infinite;
+}
+
+.fade-out {
+    opacity: 0;
+}

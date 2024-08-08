@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop bán điện thoại</title>
+    <link rel="stylesheet" href="assets/css/mobile_shop.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu flex">
+            <li><a href="#">Mobile 01</a></li>
+            <li><a href="#">Mobile 02</a></li>
+            <li><a href="#">Mobile 03</a></li>
+            <li><a href="#">Mobile 04</a></li>
+            <li><a href="#">Mobile 05</a></li>
+        </ul>
+    </nav>
+    <input id ="search" type="text" placeholder="Tìm sản phẩm ...">
+    <button class="search">Tìm kiếm</button>
+    <main>
+        <section>
+            <div class="products flex">
+                <div class="product">
+                    <div>
+                        <img src="assets/images/phone.png" alt="IPhone">
+                        <h2>IPhone 15 Pro Max</h2>
+                        <div class="price">29.000.000<sup>đ</sup></div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="assets/images/phone.png" alt="IPhone">
+                        <h2>Samsung Galaxy S24</h2>
+                        <div class="price">29.000.000<sup>đ</sup></div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="assets/images/phone.png" alt="IPhone">
+                        <h2>IPad Pro M3</h2>
+                        <div class="price">29.000.000<sup>đ</sup></div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="assets/images/phone.png" alt="IPhone">
+                        <h2>Oppo Reno 10</h2>
+                        <div class="price">29.000.000<sup>đ</sup></div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="assets/images/phone.png" alt="IPhone">
+                        <h2>Xiaomi Mi 14 Ultra</h2>
+                        <div class="price">29.000.000<sup>đ</sup></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="detail flex">
+            <div class="display">
+                <img src="assets/images/galaxys8/Black_1.jpg" id="display">
+                <div class="phones flex">
+                    <div class="phone"><img onclick="changeImg(this)" src="assets/images/galaxys8/Black_1.jpg"></div>
+                    <div class="phone"><img onclick="changeImg(this)" src="assets/images/galaxys8/Black_2.jpg"></div>
+                    <div class="phone"><img onclick="changeImg(this)" src="assets/images/galaxys8/Black_3.jpg"></div>
+                    <div class="phone"><img onclick="changeImg(this)" src="assets/images/galaxys8/Black_4.jpg"></div>
+                    <div class="phone"><img onclick="changeImg(this)" src="assets/images/galaxys8/Black_5.jpg"></div>
+                    
+                </div>
+            </div>
+            <div class="infos">
+                <h2 class="red">17.990.990<sup>đ</sup></h2>
+                <div class="button">
+                    <button value="Blue_" style="background-color: blue;"></button>
+                    <button value="Gold_" style="background-color: gold;"></button>
+                    <button value="Black_" style="background-color: black;"></button>
+                    <button value="Silver_" style="background-color: silver;"></button>
+                </div>
+                <div class="info">
+                    <h3>Khuyến mãi</h3>
+                    <ul>
+                        <li>Promotion</li>
+                        <li>Promotion</li>
+                        <li>Promotion</li>
+                    </ul>
+                </div>
+                <div class="info sale">
+                    <h3> Mua Online</h3>
+                    <ul>
+                        <li>Online 01</li>
+                        <li>Online 02</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Khoa CNTT - Đại học Mở Tp.HCM</h3>
+    </footer>
+
+    <script src="assets/js/mobile_shop.js"></script>
+</body>
+</html>
