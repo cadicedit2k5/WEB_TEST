@@ -17,8 +17,26 @@
             <li><a href="#">Mobile 05</a></li>
         </ul>
     </nav>
-    <input id ="search" type="text" placeholder="Tìm sản phẩm ...">
-    <button class="search">Tìm kiếm</button>
+    <section>
+        <ul class="tab flex">
+            <li class="active"><a href="#tab1">TAB 01</a></li>
+            <li><a href="#tab2">TAB 02</a></li>
+            <li><a href="#tab3">TAB 03</a></li>
+        </ul>
+        <div class="tab-content">
+            <h1 id="tab1">TAB CONTENT 01</h1>
+            <h1 id="tab2">TAB CONTENT 02</h1>
+            <h1 id="tab3">TAB CONTENT 03</h1>
+        </div>
+    </section>
+    <input class="input-form" id ="search" type="text" placeholder="Tìm sản phẩm ...">
+    <a href="#" class="insert">&rightarrow; Thêm sản phẩm</a>
+    <div class="form">
+        <input class="input-form" type="text" placeholder="Tên sản phẩm">
+        <input class="input-form" type="price" placeholder="Giá sản phẩm">
+        <input class="input-form" type="text" placeholder="Ảnh sản phẩm" value="assets/images/phone.png">
+        <input type="button" value="Thêm sản phẩm" class="btn">
+    </div>
     <main>
         <section>
             <div class="products flex">
@@ -28,6 +46,7 @@
                         <h2>IPhone 15 Pro Max</h2>
                         <div class="price">29.000.000<sup>đ</sup></div>
                     </div>
+                    <a href="#" class="close">&times;</a>
                 </div>
                 <div class="product">
                     <div>
@@ -35,6 +54,7 @@
                         <h2>Samsung Galaxy S24</h2>
                         <div class="price">29.000.000<sup>đ</sup></div>
                     </div>
+                    <a href="#" class="close">&times;</a>
                 </div>
                 <div class="product">
                     <div>
@@ -42,6 +62,7 @@
                         <h2>IPad Pro M3</h2>
                         <div class="price">29.000.000<sup>đ</sup></div>
                     </div>
+                    <a href="#" class="close">&times;</a>
                 </div>
                 <div class="product">
                     <div>
@@ -49,6 +70,7 @@
                         <h2>Oppo Reno 10</h2>
                         <div class="price">29.000.000<sup>đ</sup></div>
                     </div>
+                    <a href="#" class="close">&times;</a>
                 </div>
                 <div class="product">
                     <div>
@@ -56,6 +78,7 @@
                         <h2>Xiaomi Mi 14 Ultra</h2>
                         <div class="price">29.000.000<sup>đ</sup></div>
                     </div>
+                    <a href="#" class="close">&times;</a>
                 </div>
             </div>
         </section>
@@ -102,5 +125,8 @@
     </footer>
 
     <script src="assets/js/mobile_shop.js"></script>
+    <script src="assets/js/main2.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main3.js"></script>
 </body>
 </html>

@@ -34,6 +34,7 @@ ul.menu > li > a:hover {
 }
 
 div.product {
+    position: relative;
     width: 20%;
     padding: .3rem;
     box-sizing: border-box;
@@ -50,6 +51,7 @@ div.product > div {
 
 div.product img {
     width: 100%;
+    transform: translateY(0);
 }
 
 div.product .price {
@@ -60,6 +62,16 @@ div.product .price {
     top: 0; 
     left: 0;
     color: rgba(255, 255, 255, 0.766);
+}
+
+div.product a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.25rem;
 }
 
 .red {
@@ -129,4 +141,49 @@ footer h3 {
 
 .fade-out {
     opacity: 0;
+}
+
+div.form {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.input-form {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.new {
+    border: 1px solid red;
+}
+
+.tab {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.tab > li.active {
+    border: 1px solid red;
+}
+
+.tab > li {
+    margin: 10px;
+}
+
+.tab > li > a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: aqua;
 }
